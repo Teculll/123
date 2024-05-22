@@ -1,0 +1,80 @@
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Светло-серый цвет фона */
+    color: #333; /* Цвет текста */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #ff8c00; /* Оранжевый цвет фона */
+    padding: 10px 0; /* Верхний и нижний отступ */
+    text-align: left; /* Выравнивание по левому краю */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block; /* Блочное расположение элементов */
+    margin-bottom: 10px; /* Отступ между элементами */
+}
+
+nav ul li a {
+    display: block;
+    color: white; /* Цвет текста */
+    text-decoration: none;
+    padding: 10px 15px; /* Отступы */
+    border-radius: 25px; /* Закругление углов */
+    border: 2px solid #ff8c00; /* Оранжевая рамка */
+    transition: all 0.3s; /* Плавный переход всех свойств */
+}
+
+nav ul li a:hover {
+    background-color: #ff8c00; /* Оранжевый цвет фона при наведении */
+    color: #f9f9f9; /* Белый цвет текста при наведении */
+}
+
+/* Section styles */
+.content-section {
+    padding: 30px;
+    background-color: #ffffff; /* Белый цвет фона */
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.content-section h2 {
+    color: #333; /* Цвет заголовка */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Серая граница */
+    padding: 10px; /* Отступы */
+}
+
+/* Button styles */
+button {
+    background-color: #ff8c00; /* Оранжевый цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 12px 20px; /* Отступы */
+    border: none;
+    border-radius: 30px; /* Закругление углов */
+    cursor: pointer;
+    transition: all 0.3s; /* Плавный переход всех свойств */
+}
+
+button:hover {
+    background-color: #ff6d00; /* Темно-оранжевый цвет фона кнопки при наведении */
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Электронный дневник</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color: #9b3e00;">
+        <nav>
+            <ul>
+                <li><a href="#upload"> Загрузить файл с оценками </a></li>
+                <li><a href="#edit-section"> Добавить данные ученика </a></li>
+                <li><a href="#graph-stats"> Графики статистика </a></li>
+                <li><a href="#table-stats"> Таблицы статистика </a></li>
+                <li><a href="#help"> Помощь </a></li>
+                <li><a href="#about"> О сайте </a></li>
+            </ul>
+        </nav>
+        
+        <section id="upload" class="content-section">
+            <h2> Загрузить оценки </h2>
+            <input type="file" id="file-input" accept=".csv, .txt" style="display: none;">
+            <button id="upload-button"> Выбрать файл для загрузки  </button>
+            <button id="download-data-button"> Скачать данные с сайта </button>
+
+            <div id="data-preview">
+                <!-- Table data -->
+            </div>
+        </section>
+        
+        <section id="edit-section" class="content-section" style="display: none;">
+            <h2>Добавить ученика </h2>
+            <form id="student-form">
+                <button type="button" onclick="addStudent()"> Добавить </button>
+            </form>
+        </section>
+
+        <section id="table-stats" class="content-section" style="display: none;">
+            <h2> Статистика в таблицах </h2>
+            <!-- Table stat's -->
+        </section>
+
+        <section id="graph-stats" class="content-section" style="display: none;">
+            <h2> Статистика в графиках </h2>
+            <div id="charts">
+                <canvas id="class-chart" width="400" height="200"></canvas>
+                <canvas id="student-chart" width="400" height="200"></canvas>
+            </div>
+        </section>
+
+        <section id="help" class="content-section content-section2" style="display: none;">
+            <h2>Помощь</h2>
+            <p>Данный электронный дневник обладает следующими функциями:</p>
+            <table>
+                <tr>
+                    <th>Функция</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>Загрузить оценки</td>
+                    <td>Загрузка файла с оценками в форматах .csv, .txt и .xls. </td>
+                </tr>
+                <tr>
+                    <td>Редактировать журнал</td>
+                    <td>Добавление и изменение записи оценок учеников.</td>
+                </tr>
+                <tr>
+                    <td>Таблицы статистика</td>
+                    <td>Статистика по классам и предметам</td>
+                </tr>
+                <tr>
+                    <td>Графики статистика</td>
+                    <td>Статистика в графическом виде</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="about" class="content-section content-section2" style="display: none;">
+            <img src="photo12.jpg" alt="Моя фотография" width="200" height="300">
+            <p>Кузовенков Д.А. </p>
+            <p>VK <a href="https://vk.com/snifisnafisnapi"> https://vk.com/snifisnafisnapi </a> </p>
+        </section>
+        
+    </body>
+<script src="scripts.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
